@@ -1,0 +1,21 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--widget-gap);
+}
+
+.small {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.full {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 1190px) {
+  .small {
+    width: 100%;
+  }
+}

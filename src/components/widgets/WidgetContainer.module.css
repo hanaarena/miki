@@ -1,0 +1,23 @@
+.header {
+  font-size: var(--font-size-h4);
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+  padding: 0 calc(var(--widget-content-horizontal-padding) + 1px);
+  color: var(--color-text-highlight);
+}
+
+.header a {
+  color: var(--color-text-highlight);
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--color-primary);
+}
+
+.content {
+  padding: var(--widget-content-padding);
+  background: var(--color-widget-background);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-widget-content-border);
+}

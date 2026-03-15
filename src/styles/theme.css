@@ -1,0 +1,44 @@
+:root {
+  --bgh: 240;
+  --bgs: 8%;
+  --bgl: 9%;
+  --bghs: var(--bgh), var(--bgs);
+
+  --widget-gap: 23px;
+  --widget-content-vertical-padding: 15px;
+  --widget-content-horizontal-padding: 17px;
+  --widget-content-padding: var(--widget-content-vertical-padding) var(--widget-content-horizontal-padding);
+  --content-bounds-padding: 15px;
+  --border-radius: 5px;
+
+  --color-primary: hsl(43, 50%, 70%);
+  --color-positive: hsl(120, 50%, 65%);
+  --color-negative: hsl(0, 70%, 70%);
+
+  --color-background: hsl(var(--bgh), var(--bgs), var(--bgl));
+  --color-widget-background: hsl(var(--bghs), 12%);
+  --color-widget-content-border: hsl(var(--bghs), 16%);
+  --color-widget-background-highlight: hsl(var(--bghs), 15%);
+  --color-separator: hsl(var(--bghs), 16%);
+
+  --color-text-highlight: hsl(var(--bghs), 85%);
+  --color-text-paragraph: hsl(var(--bghs), 73%);
+  --color-text-base: hsl(var(--bghs), 58%);
+  --color-text-base-muted: hsl(var(--bghs), 52%);
+  --color-text-subdue: hsl(var(--bghs), 35%);
+
+  --font-size-h1: 1.7rem;
+  --font-size-h2: 1.6rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.4rem;
+  --font-size-base: 1.3rem;
+  --font-size-h5: 1.2rem;
+  --font-size-h6: 1.1rem;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-base);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: var(--font-size-base);
+}

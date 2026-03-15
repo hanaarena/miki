@@ -1,0 +1,28 @@
+.color-primary { color: var(--color-primary); }
+.color-positive { color: var(--color-positive); }
+.color-negative { color: var(--color-negative); }
+.color-highlight { color: var(--color-text-highlight); }
+.color-paragraph { color: var(--color-text-paragraph); }
+.color-base { color: var(--color-text-base); }
+.color-muted { color: var(--color-text-base-muted); }
+.color-subdue { color: var(--color-text-subdue); }
+
+.size-h1 { font-size: var(--font-size-h1); }
+.size-h2 { font-size: var(--font-size-h2); }
+.size-h3 { font-size: var(--font-size-h3); }
+.size-h4 { font-size: var(--font-size-h4); }
+.size-base { font-size: var(--font-size-base); }
+.size-h5 { font-size: var(--font-size-h5); }
+.size-h6 { font-size: var(--font-size-h6); }
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dynamic-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  gap: var(--widget-gap);
+}
