@@ -7,7 +7,12 @@ export const dashboardConfig = {
         {
           type: 'stocks' as const,
           title: 'Markets',
-          symbols: ['SPY', 'BTC-USD', 'NVDA', 'AAPL', 'MSFT'],
+          symbols: ['SPY', 'BTC-USD', 'AMD'],
+        },
+        {
+          type: 'stocks' as const,
+          title: 'Nikkei',
+          symbols: ['5016.T', '1320.T', '200A.T', '2564.T', '314A.T'],
         },
       ],
     },

@@ -23,6 +23,12 @@ const SYMBOL_NAMES: Record<string, string> = {
   NVDA: 'NVIDIA',
   META: 'Meta',
   TSLA: 'Tesla',
+  AMD: 'AMD',
+  '5016.T': 'JX金属',
+  '1320.T': 'Daiwa Nikkei 225',
+  '200A.T': 'NF日経半導体',
+  '2564.T': 'GXスーパー',
+  '314A.T': 'ISゴール',
 };
 
 function getCached(key: string) {

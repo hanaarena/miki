@@ -14,7 +14,7 @@ export function StockItem({ stock }: StockItemProps) {
   return (
     <div className={styles.item}>
       <div className={styles.info}>
-        <span className={styles.symbol}>{stock.symbol}</span>
+        <span className={styles.symbol}>{stock.symbol.replace(/\.T$/, '')}</span>
         <span className={styles.name}>{stock.name}</span>
       </div>
       <div className={styles.chart}>
@@ -25,7 +25,12 @@ export function StockItem({ stock }: StockItemProps) {
           {sign}{stock.percentChange.toFixed(2)}%
         </span>
         <span className={styles.price}>
-          {stock.currency === 'USD' ? '$' : ''}{stock.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+          {stock.price.toLocaleString(undefined, {
+            style: 'currency',
+            currency: stock.currency,
+            minimumFractionDigits: stock.currency === 'JPY' ? 0 : 2,
+            maximumFractionDigits: stock.currency === 'JPY' ? 0 : 2,
+          })}
         </span>
       </div>
     </div>
