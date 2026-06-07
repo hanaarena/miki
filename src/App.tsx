@@ -4,6 +4,7 @@ import { Header } from './components/Layout/Header';
 import { Column } from './components/Layout/Column';
 import { StockMarket } from './components/widgets/StockMarket/StockMarket';
 import { RSSFeed } from './components/widgets/RSSFeed/RSSFeed';
+import { RealtimeNews } from './components/widgets/RealtimeNews/RealtimeNews';
 import { dashboardConfig } from './config';
 
 const queryClient = new QueryClient();
@@ -31,6 +32,14 @@ function Dashboard() {
                     urls={widget.urls}
                     collapseAfter={widget.collapseAfter}
                     limit={widget.limit}
+                  />
+                );
+              case 'realtime-news':
+                return (
+                  <RealtimeNews
+                    key={j}
+                    title={widget.title}
+                    collapseAfter={widget.collapseAfter}
                   />
                 );
             }

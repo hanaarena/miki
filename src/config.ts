@@ -31,5 +31,15 @@ export const dashboardConfig = {
         },
       ],
     },
+    {
+      size: 'full' as const,
+      widgets: [
+        {
+          type: 'realtime-news' as const,
+          title: 'Realtime News',
+          collapseAfter: 8,
+        },
+      ],
+    },
   ],
 };
